@@ -17,6 +17,7 @@ Explanation: Maximum average is (12-5-6+50)/4 = 51/4 = 12.75
 
 
 **Algorithm**
+
 We know that in order to obtain the **averages** of subarrays with length k, we need to obtain the **sum** of these k length subarrays.Assume that we already know the sum of elements from index **i** to index **i+k**, say it is **x**.
 Now, to determine the sum of elements from the index **i+1** to the index **i+k+1**, all we need to do is to subtract the element **nums[i]** from **x** and to add the element **nums[i+k+1]** to **x**. 
 
