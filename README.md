@@ -7,7 +7,7 @@
   - Solve one problem everyday
   - The ratio of the degree of the problems solved every week is set to easy: medium: hard = 2: 3: 2
   - Use JavaScript/Python/C++
-  - Build my website and my blog until Saturday..........Today is Thursday.
+  - Build my website and my blog until Saturday..........Today is Thursday.
   
 - **Title type order：**(Follow KillersDeath)
   - The first stage：array、string、tree、linkedlist、math
