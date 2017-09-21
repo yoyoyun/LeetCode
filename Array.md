@@ -47,3 +47,7 @@ var findMaxAverage = function(nums, k) {
 
 - Time complexity : O(n). We iterate over the given numsnums array of length n once only.
 - Space complexity : O(1). Constant extra space is used.
+
+**My mistake**
+
+The point is the **max sum**, not where we obtain the max sum. So there is no need to care about where the k length subarrays of the max sum is.
