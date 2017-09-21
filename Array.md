@@ -22,6 +22,7 @@ We know that in order to obtain the **averages** of subarrays with length k, we 
 Now, to determine the sum of elements from the index **i+1** to the index **i+k+1**, all we need to do is to subtract the element **nums[i]** from **x** and to add the element **nums[i+k+1]** to **x**. 
 
 **JavaScript**
+
 ```javascript
 /**
  * @param {number[]} nums
@@ -41,6 +42,8 @@ var findMaxAverage = function(nums, k) {
     return res/k;
 };
 ```
+
 **Complexity Analysis**
+
 - Time complexity : O(n). We iterate over the given numsnums array of length n once only.
 - Space complexity : O(1). Constant extra space is used.
