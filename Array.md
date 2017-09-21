@@ -1,5 +1,5 @@
-#Array
-[643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/description/)
+# Array
+## [643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/description/)
 
 Given an array consisting of n integers, find the contiguous subarray of given length k that has the maximum average value. And you need to output the maximum average value.
 
@@ -21,7 +21,7 @@ We know that in order to obtain the **averages** of subarrays with length k, we 
 Now, to determine the sum of elements from the index **i+1** to the index **i+k+1**, all we need to do is to subtract the element **nums[i]** from **x** and to add the element **nums[i+k+1]** to **x**. 
 
 **JavaScript**
-```JavaScript
+```javascript
 /**
  * @param {number[]} nums
  * @param {number} k
