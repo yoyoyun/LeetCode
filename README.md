@@ -9,7 +9,7 @@
   - Use JavaScript/Python/C++
   - Build my website and my blog until Saturday..........Today is Thursday.
   
-- **Title type order：**(Follow KillersDeath)
+- **Tag order：**(Follow KillersDeath)
   - The first stage：array、string、tree、linkedlist、math
   - The second stage：HashTable、SortTopological Sort、Graph、Trie、MiniMax、Stack、Queue
   - The third stage：Binary Search、Two Pointers、Heap、Binary Search Tree、Binary Indexed Tree、Recursion、Greedy、Union Find、Map
