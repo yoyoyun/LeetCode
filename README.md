@@ -1,7 +1,7 @@
 # LeetCode
-Never too late to learn. 
-Success and persistence.
-Follow excellent person and be excellent.
+### Never too late to learn. 
+### Success and persistence.
+### Follow excellent person and be excellent.
 
 - **My plan is as follows:**
   - Solve one problem everyday
