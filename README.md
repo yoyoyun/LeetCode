@@ -5,7 +5,7 @@
 
 - **My plan is as follows:**
   - Solve one problem everyday
-  - The ratio of the degree of the problems solved every week is set to easy: medium: hard = 2: 3: 2
+  - The ratio of the degree of the problems solved every week is set to easy: medium: hard = 3: 2: 2
   - Use JavaScript/Python/C++
   - Build my website and my blog until Saturday..........Today is Thursday.
   
