@@ -127,10 +127,11 @@ Output: False
 3. n is a non-negative integer which won't exceed the input array size.
 
 **Algorithm**
-When constant 0 is 1/2, we can plant 0 new flower;
-When constant 0 is 3/4, we can plant 1 new flower;
-When constant 0 is 5/6, we can plant 2 new flower...
-So, we can see When constant 0 is `empty`, we can plant integer `(empty-1)/2` new flower. What we need to do is finding how many constant 0 there is.
+
+1. When constant 0 is 1/2, we can plant 0 new flower;
+2. When constant 0 is 3/4, we can plant 1 new flower;
+3. When constant 0 is 5/6, we can plant 2 new flower...
+4. So, we can see When constant 0 is `empty`, we can plant integer `(empty-1)/2` new flower. What we need to do is finding how many constant 0 there is.
 
 **JavaScript**
 ```javascript
