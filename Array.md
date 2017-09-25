@@ -87,15 +87,14 @@ var triangleNumber = function(nums) {
     function sortNumber(a,b){
         return a - b
     }
-    var nums1 = nums.sort(sortNumber);
+    nums = nums.sort(sortNumber);
     var count = 0 ;
-    // console.log(nums.sort());
-    for(var i = 0; i < nums1.length - 2 ; i++){
+    for(var i = 0; i < nums.length - 2 ; i++){
         var k = i + 2;
-        for(var j = i + 1 ; j < nums1.length - 1 && nums1[i] !== 0 ; j++){
-            while( k < nums1.length && nums1[i]+nums1[j] > nums1[k])
+        for(var j = i + 1 ; j < nums.length - 1 && nums[i] !== 0 ; j++){
+            while( k < nums.length && nums[i] + nums[j] > nums[k])//find first k not satisfy the inequality
                 k++;
-            count += k-j-1;
+            count += k-j-1;//calculate the count meeting the need
         }
     }
     return count;
