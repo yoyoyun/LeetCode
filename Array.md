@@ -84,7 +84,7 @@ Further, when we choose a higher value of index `j` for a particular `i` chosen,
  * @return {number}
  */
 var triangleNumber = function(nums) {
-    function sortNumber(a,b){
+    function sortNumber(a,b){ //attention
         return a - b
     }
     nums = nums.sort(sortNumber);
@@ -142,16 +142,16 @@ Output: False
 var canPlaceFlowers = function(flowerbed, n) {
     var i = 0;
     var newFlower = 0;
-    flowerbed = ([1,0].concat(flowerbed)).concat([0,1]);  
+    flowerbed = ([1,0].concat(flowerbed)).concat([0,1]);  //attention
     while(i < flowerbed.length){
-        if(flowerbed[i] === 0){
+        if(flowerbed[i] === 0){  //attention
             var empty = 0;
             var j = i;
-            while(flowerbed[j] === 0){
+            while(flowerbed[j] === 0){  //attention
                 j++;
                 empty ++;
             }
-            newFlower += parseInt((empty - 1)/2);  
+            newFlower += parseInt((empty - 1)/2);  //attention
             i = i + empty;
         }else{
             i++;
