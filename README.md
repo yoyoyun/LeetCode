@@ -18,3 +18,4 @@
 ## First Week (array)
 - [643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/description/) (Easy)
 - [611. Valid Triangle Number I](https://leetcode.com/problems/valid-triangle-number/description/)(Medium)
+- [605. Can Place Flowers](https://leetcode.com/problems/can-place-flowers/description/)(Easy)
