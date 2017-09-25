@@ -105,3 +105,67 @@ var triangleNumber = function(nums) {
 **Complexity Analysis**
 - Time complexity : `O(n^2)` Loop of k and j will be executed `O(n^2)` times in total, because, we do not reinitialize the value of k for a new value of j chosen(for the same i). Thus the complexity will be O(n^2+n^2)=O(n^2).
 - Space complexity : O(logn). Sorting takes O(logn) space.
+
+## [605. Can Place Flowers](https://leetcode.com/problems/can-place-flowers/description/)
+Suppose you have a long flowerbed in which some of the plots are planted and some are not. However, flowers cannot be planted in adjacent plots - they would compete for water and both would die.
+
+Given a flowerbed (represented as an array containing 0 and 1, where 0 means empty and 1 means not empty), and a number n, return if n new flowers can be planted in it without violating the no-adjacent-flowers rule.
+
+**Example 1:**
+```
+Input: flowerbed = [1,0,0,0,1], n = 1
+Output: True
+```
+**Example 2:**
+```
+Input: flowerbed = [1,0,0,0,1], n = 2
+Output: False
+```
+**Note:**
+1. The input array won't violate no-adjacent-flowers rule.
+2. The input array size is in the range of [1, 20000].
+3. n is a non-negative integer which won't exceed the input array size.
+
+**Algorithm**
+When constant 0 is 1/2, we can plant 0 new flower;
+When constant 0 is 3/4, we can plant 1 new flower;
+When constant 0 is 5/6, we can plant 2 new flower...
+So, we can see When constant 0 is `empty`, we can plant integer `(empty-1)/2` new flower. What we need to do is finding how many constant 0 there is.
+
+**JavaScript**
+```javascript
+/**
+ * @param {number[]} flowerbed
+ * @param {number} n
+ * @return {boolean}
+ */
+var canPlaceFlowers = function(flowerbed, n) {
+    var i = 0;
+    var newFlower = 0;
+    flowerbed = ([1,0].concat(flowerbed)).concat([0,1]);  
+    while(i < flowerbed.length){
+        if(flowerbed[i] === 0){
+            var empty = 0;
+            var j = i;
+            while(flowerbed[j] === 0){
+                j++;
+                empty ++;
+            }
+            newFlower += parseInt((empty - 1)/2);  
+            i = i + empty;
+        }else{
+            i++;
+        }
+    } 
+    return n <= newFlower ? true : false ; 
+};
+```
+
+**Complexity Analysis**
+- Time complexity : O(n). A single scan of the flowerbed array of size n is done.
+- Space complexity : O(1). Constant extra space is used.
+
+**Details**
+- When constant 0 appears at `index[0]` or `index[length-1]`, for example, `[0,0,1,0,0]`, it is possible that we can plant 2 more new flower. In this circumstance, we can add `[1,0]` to the beginning of the given array flowerbed, add `[0,1]` to the end of flowerbed. It will not only has no effect on the results, but also can help simplify the judgement.
+- JavaScript use parseInt to get the integer of Division Operation(/).
+- When do the judgement operation, use '==='.
